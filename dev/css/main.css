@@ -396,9 +396,9 @@
       position: absolute;
       right: -160px;
       bottom: -45px; }
-  .banner .button {
+  .banner .button, .banner .button-mob {
     display: inline-block; }
-    .banner .button .btn {
+    .banner .button .btn, .banner .button-mob .btn {
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: normal;
@@ -410,7 +410,7 @@
       box-shadow: none !important;
       border: 1px solid #BCBCBC;
       border-radius: 0; }
-      .banner .button .btn:hover {
+      .banner .button .btn:hover, .banner .button-mob .btn:hover {
         background: #000; }
   .banner .holder {
     display: flex;
@@ -497,14 +497,14 @@
         font-size: 38px;
         line-height: 49px; }
       .banner .sub-title .number {
-        font-size: 115px;
-        line-height: 100px;
+        font-size: 144px;
+        line-height: 136px;
         margin-bottom: 47px;
         margin-right: 93px;
         letter-spacing: 15px; }
       .banner .sub-title .number:after {
-        font-size: 120px;
-        line-height: 120px;
+        font-size: 144px;
+        line-height: 136px;
         right: -125px;
         bottom: -45px; }
     .banner .use {
@@ -520,7 +520,7 @@
     .banner .button .btn {
       font-size: 18px;
       line-height: 18px;
-      padding: 20px 30px; }
+      padding: 25px 50px; }
     .banner .down {
       width: 60px;
       height: 60px; }
@@ -533,59 +533,31 @@
     .banner .slick-prev, .banner .slick-next {
       width: 60px;
       height: 60px; } }
-  @media (max-width: 991px) {
+  @media (max-width: 992px) {
     .banner h2 {
-      font-size: 30px;
-      line-height: 36px;
-      letter-spacing: 0.04em; }
-      .banner h2 span {
-        font-size: 20px;
-        line-height: 24px; }
-    .banner .button {
-      display: inline-block;
-      margin-bottom: 93px; }
-      .banner .button .btn {
-        padding: 14px 25px; }
-    .banner .text {
-      padding: 10px 0; } }
-  @media (max-width: 768px) {
-    .banner .image {
-      display: none; }
-    .banner h2 {
-      width: 85%;
-      padding: 30px 0 23px 0; }
-      .banner h2 span {
-        font-size: 18px;
-        line-height: 22px; }
-    .banner .button {
-      margin-bottom: 93px; }
-      .banner .button .btn {
-        padding: 13px 37px; }
-    .banner .text {
-      font-size: 11px;
-      line-height: 13px;
-      padding: 13px 0; } }
-  @media (max-width: 490px) {
-    .banner h2 {
-      width: 85%;
-      padding: 24px 0 13px 0;
-      font-size: 15px;
-      line-height: 18px; }
-      .banner h2 span {
-        font-size: 11px;
-        line-height: 13px; }
-    .banner .line {
-      width: 115px; }
-    .banner .button .btn {
-      font-size: 14px;
-      line-height: 17px;
-      padding: 13px 22px; }
-      .banner .button .btn span {
-        display: none; }
-    .banner .text {
-      font-size: 11px;
-      line-height: 13px;
-      padding: 13px 0; } }
+      font-size: 48px;
+      line-height: 59px;
+      margin-bottom: 29px; }
+    .banner .sub-title {
+      max-width: 100%;
+      align-items: center; }
+      .banner .sub-title p {
+        font-size: 28px;
+        line-height: 44px;
+        margin-bottom: 27px; }
+    .banner .use {
+      margin-right: 50px; }
+      .banner .use p {
+        font-size: 24px;
+        line-height: 29px; }
+        .banner .use p br {
+          display: none; }
+        .banner .use p .year {
+          font-size: 34px;
+          line-height: 65px; } }
+  @media (max-width: 867px) {
+    .banner h2 br {
+      display: none; } }
 
 .why {
   background: url("../../public/images/bg-why.png") no-repeat;
@@ -2008,7 +1980,7 @@
     font-size: 64px;
     line-height: 159.4%;
     color: #BCBCBC;
-    margin-bottom: 105px; }
+    margin-bottom: 145px; }
   .installation p {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -2341,7 +2313,17 @@
     align-items: center; }
   @media (max-width: 1570px) {
     .company .container {
-      max-width: 1200px; } }
+      max-width: 1200px; }
+    .company h4 {
+      font-size: 30px;
+      line-height: 36px; }
+    .company p {
+      font-size: 16px;
+      line-height: 26px; }
+    .company .button .btn {
+      font-size: 18px;
+      line-height: 18px;
+      padding: 20px 30px; } }
 
 .footer {
   background: #5E5656;
