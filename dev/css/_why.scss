@@ -1,0 +1,620 @@
+.why {
+  background: url("../../public/images/bg-why.png") no-repeat;
+  background-size: cover;
+  padding-top: 59px;
+  position: relative;
+  padding-bottom: 74px;
+  overflow: hidden;
+
+  .icon-diploma:before {
+    content: "\e900";
+    color: #af7f3e;
+    font-size: 62px;
+  }
+  .icon-hand:before {
+    content: "\e902";
+    color: #af7f3e;
+    font-size: 62px;
+  }
+  .icon-machine:before {
+    content: "\e904";
+    color: #af7f3e;
+    font-size: 62px;
+  }
+
+  .icon-rulon:before {
+    content: "\e908";
+    color: #af7f3e;
+    font-size: 62px;
+  }
+
+  .inner {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 63px;
+
+    .number {
+      padding: 15px 20px;
+      position: relative;
+      flex-direction: column;
+      align-items: baseline;
+
+      &:before {
+        content: '';
+        width: 30px;
+        height: 30px;
+        border-left: 2px solid #BE8942;
+        border-top: 2px solid #BE8942;
+        position: absolute;
+        left: 6px;
+        top: 9px;
+      }
+
+      .title {
+        font-family: 'Oranienbaum', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 72px;
+        line-height: 83px;
+        color: #BE8942;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1A405F;
+        margin-bottom: 0;
+        margin-left: -13px;
+
+        strong {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .button.download {
+    text-align: center;
+    margin-bottom: 150px;
+    .btn {
+      background: transparent;
+      border: 2px solid rgba(250, 150, 146, 0.9);
+      border-radius: 52px;
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: #1A405F;
+      box-shadow: none !important;
+      outline: none !important;
+      padding: 20px 40px;
+
+      &:hover {
+        background: rgba(250, 150, 146, 0.9);
+      }
+    }
+  }
+
+  .image {
+    max-width: 662px;
+  }
+
+  .why-slider {
+    outline: none !important;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #355672;
+    margin-bottom: 17px;
+
+    span {
+      font-family: 'Cormorant', serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: #355672;
+    }
+  }
+
+  .text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 25px;
+    max-width: 569px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pad {
+    padding: 0 45px;
+  }
+
+  .pad2 {
+    padding-left: 30px;
+  }
+
+  .item-row {
+    display: flex;
+    flex-direction: row;
+   
+  }
+
+  .icon {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    border: 1px solid #AF7F3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+  }
+
+  .item {
+    margin-right: 12px;
+    display: flex;
+    width: 50%;
+    margin-bottom: 33px;
+  }
+
+  .item2 {
+    margin-right: 0;
+  }
+
+  h6 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #284C69;
+    margin-bottom: 3px;
+  }
+
+  p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 0;
+  }
+
+  .button.show {
+    margin-top: 8px;
+    text-align: center;
+    .btn {
+      background: #355672;
+      border-radius: 52px;
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+      box-shadow: none !important;
+      outline: none !important;
+      padding: 18px 60px;
+
+      &:hover {
+        background: rgba(53, 86, 114, 0.78);
+      }
+    }
+  }
+
+  .why-slider {
+    outline: none !important;
+  }
+
+  ///slick-prev slick-next
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 1px;
+  }
+
+  .slick-prev {
+    left: -32px;
+  }
+
+  .slick-next {
+    right: -32px;
+  }
+
+  .arrow {
+    max-width: 25px;
+    max-height: 75px;
+  }
+
+  .slick-prev, .slick-next {
+    top: 50%;
+    font-size: 16px;
+    line-height: 0;
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 75px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #918C8C;
+    outline: none;
+    background: transparent;
+    z-index: 1;
+  }
+
+  ///slick-prev slick-next end
+
+  //slider dots begin
+
+  .slick-dots {
+    position: absolute;
+    bottom: -51px;
+    display: block;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    right: 0;
+  }
+
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    cursor: pointer;
+    margin: 0 18px 0 18px;
+    background: #9696C8;
+    border: 1px solid #6566A7;
+    border-radius: 50%;
+  }
+
+  .slick-dots li.slick-active {
+    position: relative;
+    display: inline-block;
+    background: #525395;
+    border: 1px solid #2B2C67;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .slick-dots li button:before {
+    content: "";
+  }
+
+  //slider dots end
+
+  //media
+
+  @media (max-width: 1270px) {
+    .icon {
+      width: 80px;
+      height: 80px;
+    }
+
+    .icon-diploma:before {
+      font-size: 50px;
+    }
+    .icon-hand:before {
+      font-size: 50px;
+    }
+    .icon-machine:before {
+      font-size: 50px;
+    }
+    .icon-rulon:before {
+      font-size: 50px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 46px;
+    padding-bottom: 30px;
+
+    .inner {
+      margin-bottom: 20px;
+
+      .number {
+        padding: 15px 20px;
+        position: relative;
+        flex-direction: column;
+        align-items: baseline;
+
+        &:before {
+          width: 19px;
+          height: 22px;
+          left: 6px;
+          top: 9px;
+        }
+
+        .title {
+          font-size: 48px;
+          line-height: 55px;
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 22px;
+          max-width: 165px;
+
+          br {
+            display: none;
+          }
+
+          strong {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .button.download {
+      margin-bottom: 30px;
+      .btn {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 13px 35px;
+      }
+    }
+
+    h4 {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 27px;
+
+      span {
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+
+    .text {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+      margin-bottom: 19px;
+      max-width: 350px;
+    }
+
+    .text2 {
+      margin-bottom: 0;
+    }
+
+    .pad2 {
+      padding: 0;
+    }
+
+    .image {
+      max-width: 414px;
+    }
+
+    .why-slider {
+      margin-bottom: 49px;
+    }
+
+    .slick-dots {
+      bottom: -38px;
+    }
+
+    .slick-dots li {
+      width: 9px;
+      height: 9px;
+      margin: 0 11px 0 11px;
+    }
+
+    .slick-dots li.slick-active {
+      width: 9px;
+      height: 9px;
+    }
+
+    .cards {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .item-row {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    .item {
+      margin-bottom: 27px;
+    }
+
+    .button.show {
+      margin-top: 17px;
+      .btn {
+        padding: 18px 74px;
+
+        &:hover {
+          background: rgba(53, 86, 114, 0.78);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    background: url("../../public/images/bg-why.png") no-repeat 80% 100%;
+    background-size: cover;
+    padding-top: 41px;
+    padding-bottom: 35px;
+
+    .inner {
+      margin-bottom: 3px;
+
+      .number {
+
+        &:before {
+          width: 31px;
+          height: 22px;
+        }
+      }
+    }
+
+    .button.download {
+      margin-bottom: 50px;
+      .btn {
+        background: #FFFFFF;
+      }
+    }
+
+    .text {
+      text-align: center;
+    }
+
+    .text2 {
+      margin-bottom: 25px;
+    }
+
+    .why-slider {
+      margin-bottom: 53px;
+    }
+
+    .item {
+      width: 58%;
+    }
+
+    .button.show {
+      margin-top: 35px;
+      .btn {
+        padding: 16px 71px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+
+    .item {
+      width: auto;
+    }
+
+    .cards {
+      width: 100%;
+    }
+
+    .inner {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+
+      .number {
+        p {
+          max-width: 270px;
+        }
+
+        &:before {
+          width: 19px;
+          height: 22px;
+          left: 6px;
+          top: 9px;
+        }
+
+      }
+    }
+  }
+
+  @media (max-width: 520px) {
+    padding-top: 23px;
+    padding-bottom: 20px;
+
+    .cards {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .inner {
+      width: 100%;
+      .number {
+        padding: 15px;
+        p {
+          max-width: 270px;
+        }
+      }
+    }
+
+    .button.download {
+      margin-bottom: 30px;
+      .btn {
+        font-size: 13px;
+        line-height: 17px;
+        padding: 13px 8px;
+      }
+    }
+
+    h4 {
+      margin-bottom: 10px;
+    }
+
+    .text {
+      max-width: 263px
+    }
+
+    .pad {
+      padding: 0;
+    }
+
+    .why-slider {
+      width: 100vw;
+    }
+
+    .item-row {
+      flex-direction: column;
+    }
+
+    .item {
+      margin: 0 0 12px 0;
+      width: 233px;
+    }
+
+    .button.show {
+      margin-top: 0;
+      .btn {
+        padding: 16px 23px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 520px) {
+    .cards {
+      align-items: flex-start;
+    }
+  }
+}

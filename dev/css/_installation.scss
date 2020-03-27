@@ -1,0 +1,119 @@
+.installation {
+  //background: url("../../public/images/bg-installation.png") center no-repeat #000;
+  background-size: 100% 100%;
+  background: #000;
+
+  h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 159.4%;
+    color: #BCBCBC;
+    margin-bottom: 105px;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 159.4%;
+    color: #FFFFFF;
+    margin-bottom: 0;
+
+    span {
+      color: #C18E57;
+    }
+  }
+
+  .holder {
+    padding-bottom: 115px;
+  }
+
+  .line {
+    width: 2px;
+    height: 100%;
+    background: #212121;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .icon {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .right {
+    margin-right: 50px;
+  }
+
+  .left {
+    margin-left: 50px;
+  }
+
+  .icon-right:before {
+    content: "";
+    width: 142px;
+    height: 2px;
+    background: #212121;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: -15px;
+  }
+
+  .icon-left:before {
+    content: "";
+    width: 142px;
+    height: 2px;
+    background: #212121;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    left: -15px;
+  }
+
+  .icon-tap2{
+    top: -75%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .icon-chimney2 {
+    top: -125%;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .icon-barrel2  {
+    top: -95%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .first {
+    margin-bottom: 80px;
+    z-index: 9;
+  }
+
+  .second {
+    margin-bottom: 100px;
+  }
+}

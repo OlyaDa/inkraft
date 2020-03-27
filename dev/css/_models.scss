@@ -1,0 +1,286 @@
+.models {
+  background: #FCFCFC;
+  padding-top: 65px;
+  padding-bottom: 94px;
+
+  h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #355672;
+    margin-bottom: 13px;
+  }
+
+  a {
+    padding: 0;
+  }
+
+  .sub-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #424242;
+    margin-bottom: 68px;
+    text-align: center;
+  }
+
+  .item {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 39px;
+  }
+
+  .image img{
+    border-radius: 10px 10px 0 0;
+  }
+
+  p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 0;
+    padding: 25px 0 16px 0;
+    background: #FFFBFB;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .form-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #E3B474;
+    margin-bottom: 67px;
+  }
+
+  .form-inp {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 59%;
+  }
+
+  input {
+    background: #FFFEFE;
+    border: 2px solid #918C8C;
+    border-radius: 10px;
+    outline: none !important;
+    height: 60px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.36);
+    width: 48%;
+    //margin-right: 25px;
+  }
+
+  input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.36);
+  }
+  input::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.36);
+  }
+  input::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.36);
+  }
+  input::placeholder {
+    color: rgba(0, 0, 0, 0.36);
+  }
+
+  button {
+    border-radius: 10px;
+    height: 60px;
+    width: 39%;
+    background: #355672;
+    border: none;
+    outline: none !important;
+
+    &:hover {
+      background: rgba(53, 86, 114, 0.7);
+    }
+
+    .btn {
+      outline: none !important;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  //media
+
+  @media (max-width: 1070px) {
+    p {
+      font-size: 16px;
+      padding: 25px 0 16px 0;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 47px;
+    padding-bottom: 69px;
+
+    h4 {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 13px;
+    }
+
+    .sub-title {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+
+    .item {
+      margin-bottom: 35px;
+    }
+
+    .form-title {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 35px;
+    }
+
+    .form-inp {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .inputs {
+      width: 100%;
+      margin-bottom: 48px;
+    }
+
+    input {
+      width: 48%;
+    }
+
+    button {
+      width: 48%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 32px 0 86px 0;
+
+    a {
+      width: 100%;
+    }
+
+    .sub-title {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+
+    .item {
+      margin-bottom: 28px;
+    }
+
+    form {
+      margin-top: 22px;
+    }
+
+    .form-title {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 16px;
+    }
+
+    .form-inp {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .inputs {
+      margin-bottom: 31px;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 9px 0 12px 0;
+
+    h4 {
+      margin-bottom: 0;
+    }
+
+    a {
+      width: 100%;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      padding: 20px 0 13px 0;
+    }
+
+    .sub-title {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 25px;
+    }
+
+    .item {
+      margin-bottom: 12px;
+    }
+
+    form {
+      margin-top: 2px;
+    }
+
+    .form-title {
+      margin-bottom: 26px;
+    }
+
+    .form-inp {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .inputs {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+
+    input {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    button {
+      margin-top: -6px;
+      width: 100%;
+    }
+  }
+}
