@@ -67,23 +67,34 @@ $('.banner-slider').slick({
     nextArrow:'<button class="slick-arrow slick-next"> <span class="icon-ar-right"></span> </button>',
     dots: false,
     autoplay: false,
+
+    responsive: [
+        {
+            breakpoint: 759,
+            settings: {
+                arrows: false,
+            }
+        },
+    ]
 });
 
-//slider for "why"
+//slider for "doing"
 
-$('.why-slider').slick({
-    slidesToShow: 1,
+$('.doing-slider').slick({
+    slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
     arrows: true,
     dots: true,
+    centerMode: true,
     autoplay: false,
-    prevArrow:'<button class="slick-arrow slick-prev"> <img src="images/al.png" class="arrow"> </img> </button>',
-    nextArrow:'<button class="slick-arrow slick-next"> <img src="images/ar.png" class="arrow"> </img></button>',
+    prevArrow:'<button class="slick-arrow slick-prev"> <span class="icon-ar-left"></span> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <span class="icon-ar-right"></span> </button>',
     responsive: [
         {
-            breakpoint: 481,
+            breakpoint: 768,
             settings: {
+                slidesToShow: 1,
                 arrows: false,
             }
         },

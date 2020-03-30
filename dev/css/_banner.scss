@@ -5,6 +5,7 @@
   background-size: 100% 100%;
   padding-top: 133px;
   overflow: hidden;
+  z-index: 4;
 
   .banner-inner {
     display: flex;
@@ -24,14 +25,7 @@
     margin-bottom: 16px;
   }
 
-  .sub-title {
-    max-width: 650px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .sub-title p {
+  p {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -40,6 +34,16 @@
     color: #FFFFFF;
     margin-bottom: 32px;
     max-width: 649px;
+  }
+
+  .sub-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .left-part {
+    width: 56%;
   }
 
   .sub-title .number {
@@ -69,6 +73,7 @@
 
   .button, .button-mob {
     display: inline-block;
+    margin-bottom: 20px;
     .btn {
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
@@ -191,6 +196,7 @@
 
   /////////////////////media
 
+  //для моего экрана
   @media (max-width: 1570px) {
     .container {
       max-width: 1200px;
@@ -202,7 +208,7 @@
     }
 
     .sub-title {
-      max-width: 514px;
+      //max-width: 514px;
       p {
         font-size: 38px;
         line-height: 49px;
@@ -270,34 +276,133 @@
     }
   }
 
-  ///////////////  992
+  @media (max-width: 1024px) {
+    .left-part {
+      width: 53%;
+    }
+    .sub-title {
+      align-items: center;
+    }
+  }
 
-  @media (max-width: 992px) {
+  @media (max-width: 970px) {
+    .slick-prev, .slick-next {
+      top: 71%;
+    }
+  }
+
+  @media (max-width: 940px) {
+    background: url("../../public/images/banner-mob.png") top left no-repeat #000;
+    background-size: 100% 100%;
+
+    .button {
+      display: none;
+    }
+
+    .button-mob {
+      display: block !important;
+    }
+
+    .holder {
+      margin-bottom: 0;
+    }
+
+    .slick-prev, .slick-next {
+      top: 78%;
+    }
+
+    .slick-prev.slick-arrow {
+      right: 70px;
+    }
+
+    .slick-next {
+      right: 0;
+    }
+
+    .down {
+      width: 60px;
+      height: 60px;
+      left: 15px;
+    }
 
     h2 {
-      font-size: 48px;
+      font-size: 50px;
+      line-height: 56px;
+      br {
+        display: none;
+      }
+    }
+
+    .button-mob {
+      margin-bottom: 90px;
+      .btn {
+        padding: 17px 50px;
+      }
+    }
+
+    p {
+      font-size: 34px;
       line-height: 59px;
-      margin-bottom: 29px;
+    }
+
+    .image {
+      margin-left: -100px;
+    }
+
+    .use p {
+      font-size: 23px;
+      line-height: 32px;
+    }
+
+    .left-part {
+      width: 42%;
+    }
+  }
+
+  @media (max-width: 760px) {
+    h2 {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 30px;
+      max-width: 420px;
+    }
+
+    .holder {
+      flex-direction: column;
+      align-items: baseline;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 13px;
     }
 
     .sub-title {
-      max-width: 100%;
-      align-items: center;
-      p {
-        font-size: 28px;
-        line-height: 44px;
-        margin-bottom: 27px;
+      align-items: baseline;
+
+      .number {
+        font-size: 115px;
+        line-height: 100px;
+        margin-bottom: 47px;
+        margin-right: 93px;
+        letter-spacing: 15px;
+      }
+      .number:after {
+        font-size: 120px;
+        line-height: 120px;
+        right: -125px;
+        bottom: -45px;
       }
     }
 
     .use {
       margin-right: 50px;
+      margin-bottom: 47px;
       p {
-        br {
-          display: none;
-        }
         font-size: 24px;
         line-height: 29px;
+        letter-spacing: 0.1em;
 
         .year {
           font-size: 34px;
@@ -305,121 +410,108 @@
         }
       }
     }
-  }
 
-  @media (max-width: 867px) {
-    h2 {
-      br {
-        display: none;
+    .image {
+      max-width: 64px;
+    }
+
+    .button-mob {
+      display: block !important;
+      text-align: center;
+      margin-bottom: 20px;
+      .btn {
+        font-size: 18px;
+        line-height: 18px;
+        padding: 25px 50px;
       }
+    }
+
+    .down {
+      display: none;
+      width: 60px;
+      height: 60px;
+    }
+
+    .icon-ar-down:before {
+      font-size: 32px;
+    }
+
+    .icon-ar-left:before {
+      font-size: 20px;
+    }
+    .icon-ar-right:before {
+      font-size: 20px;
+    }
+
+    .slick-prev, .slick-next {
+      display: none;
     }
   }
 
-  ////////////////// 970
+  @media (max-width: 500px) {
+    h2 {
+      br {
+        display: block;
+      }
+    }
 
-  //@media (max-width: 970px) {
-  //  .sub-title {
-  //    max-width: 514px;
-  //  }
-  //
-  //  .slick-prev.slick-arrow {
-  //    right: 18%;
-  //  }
-  //}
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 13px;
+    }
 
-  ////////////////// 940
+    .sub-title {
+      align-items: baseline;
+      margin-left: 28%;
 
-  //@media (max-width: 940px) {
-  //  h2 {
-  //    font-size: 24px;
-  //    line-height: 29px;
-  //    margin-bottom: 30px;
-  //  }
-  //
-  //  .holder {
-  //    flex-direction: column;
-  //    align-items: baseline;
-  //  }
-  //
-  //  .sub-title {
-  //    align-items: baseline;
-  //    p {
-  //      font-size: 24px;
-  //      line-height: 29px;
-  //      margin-bottom: 13px;
-  //    }
-  //
-  //    .number {
-  //      font-size: 115px;
-  //      line-height: 100px;
-  //      margin-bottom: 47px;
-  //      margin-right: 93px;
-  //      letter-spacing: 15px;
-  //    }
-  //    .number:after {
-  //      font-size: 120px;
-  //      line-height: 120px;
-  //      right: -125px;
-  //      bottom: -45px;
-  //    }
-  //  }
-  //
-  //  .use {
-  //    margin-right: 50px;
-  //    p {
-  //      font-size: 24px;
-  //      line-height: 34px;
-  //
-  //      .year {
-  //        font-size: 34px;
-  //        line-height: 65px;
-  //      }
-  //    }
-  //  }
-  //
-  //  .image {
-  //    max-width: 64px;
-  //  }
-  //
-  //  .button {
-  //    display: none;
-  //    .btn {
-  //      font-size: 18px;
-  //      line-height: 18px;
-  //      padding: 25px 50px;
-  //    }
-  //  }
-  //
-  //  .button-mob {
-  //    display: block !important;
-  //    text-align: center;
-  //    .btn {
-  //      font-size: 18px;
-  //      line-height: 18px;
-  //      padding: 25px 50px;
-  //    }
-  //  }
-  //
-  //  .down {
-  //    width: 60px;
-  //    height: 60px;
-  //  }
-  //
-  //  .icon-ar-down:before {
-  //    font-size: 32px;
-  //  }
-  //
-  //  .icon-ar-left:before {
-  //    font-size: 20px;
-  //  }
-  //  .icon-ar-right:before {
-  //    font-size: 20px;
-  //  }
-  //
-  //  .slick-prev, .slick-next {
-  //    width: 60px;
-  //    height: 60px;
-  //  }
-  //}
+      .number {
+        font-size: 96px;
+        line-height: 91px;
+        margin-bottom: 22px;
+        margin-right: 93px;
+        letter-spacing: 15px;
+      }
+      .number:after {
+        font-size: 96px;
+        line-height: 91px;
+        right: -100px;
+        bottom: -25px;
+      }
+    }
+
+    .use {
+      margin-right: 50px;
+      margin-bottom: 47px;
+      p {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.1em;
+
+        .year {
+          font-size: 24px;
+          line-height: 29px;
+        }
+      }
+    }
+
+    .image {
+      max-width: 30px;
+      margin-left: -50px;
+    }
+
+    .button-mob {
+      display: block !important;
+      text-align: center;
+      margin-bottom: 20px;
+      .btn {
+        font-size: 13px;
+        line-height: 17px;
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
 
 }
