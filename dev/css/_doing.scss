@@ -4,6 +4,15 @@
   background: #000;
   position: relative;
 
+  .image-kraft {
+    display: inline-block;
+    position: absolute;
+    top: 4%;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+
   h4 {
     font-style: normal;
     font-weight: 500;
@@ -98,7 +107,6 @@
     }
   }
 
-
   ///slick-prev slick-next
 
   .slick-prev:before, .slick-next:before {
@@ -143,7 +151,6 @@
     right: 0;
   }
 
-
   .slick-dots li {
     position: relative;
     display: inline-block;
@@ -178,6 +185,16 @@
   ///media
   @media (max-width: 1570px) {
     padding-top: 20px;
+
+    .image-kraft {
+      display: inline-block;
+      position: absolute;
+      top: 4%;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 90%;
+    }
 
     h4 {
       font-size: 36px;
@@ -244,6 +261,10 @@
   }
 
   @media (max-width: 1280px) {
+    .image-kraft {
+      display: none;
+    }
+
     .slick-prev.slick-arrow {
       right: 17%;
     }

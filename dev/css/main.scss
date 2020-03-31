@@ -1,14 +1,15 @@
-$font_text: 'Montserrat', sans-serif;
-$caption_text: Cera Pro, sans-serif;
+* {
+  box-sizing: border-box;
+}
 
 @import "header";
 @import "banner";
 @import "why";
 @import "showroom";
-@import "services";
+@import "work";
 @import "contacts";
 @import "reviews";
-@import "washing";
+@import "production";
 @import "doing";
 @import "installation";
 @import "choice";
@@ -76,61 +77,187 @@ $caption_text: Cera Pro, sans-serif;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-exam:before {
+  content: "\e90d";
+  color: #bcbcbc;
+}
+
+.icon-block:before {
+  content: "\e90b";
+  color: #bcbcbc;
+}
+.icon-instrument:before {
+  content: "\e90c";
+  color: #bcbcbc;
+}
+.icon-list:before {
+  content: "\e90d";
+  color: #bcbcbc;
+}
+.icon-truba .path1:before {
+  content: "\e90e";
+  color: rgb(97, 97, 97);
+}
+.icon-truba .path2:before {
+  content: "\e90f";
+  margin-left: -0.9658203125em;
+  color: rgb(188, 188, 188);
+}
+.icon-truba .path3:before {
+  content: "\e910";
+  margin-left: -0.9658203125em;
+  color: rgb(188, 188, 188);
+}
+.icon-truba .path4:before {
+  content: "\e911";
+  margin-left: -0.9658203125em;
+  color: rgb(188, 188, 188);
+  opacity: 0.62;
+}
+.icon-truba .path5:before {
+  content: "\e912";
+  margin-left: -0.9658203125em;
+  color: rgb(188, 188, 188);
+  opacity: 0.62;
+}
+.icon-truba .path6:before {
+  content: "\e913";
+  margin-left: -0.9658203125em;
+  color: rgb(97, 97, 97);
+}
+.icon-truba .path7:before {
+  content: "\e914";
+  margin-left: -0.9658203125em;
+  color: rgb(188, 188, 188);
+}
+.icon-truba .path8:before {
+  content: "\e915";
+  margin-left: -0.9658203125em;
+  color: rgb(188, 188, 188);
+}
+.icon-truba .path9:before {
+  content: "\e916";
+  margin-left: -0.9658203125em;
+  color: rgb(188, 188, 188);
+  opacity: 0.62;
+}
+.icon-truba .path10:before {
+  content: "\e917";
+  margin-left: -0.9658203125em;
+  color: rgb(188, 188, 188);
+  opacity: 0.62;
+}
+.icon-truba .path11:before {
+  content: "\e918";
+  margin-left: -0.9658203125em;
+  color: rgb(64, 64, 64);
+}
+
+.icon-car:before {
+  content: "\e907";
+  color: #bcbcbc;
+}
+
+.icon-car2:before {
+  content: "\e907";
+  color: #212121;
+  font-size: 732px;
+}
+
+.icon-pipe:before {
+  content: "\e908";
+  color: #bcbcbc;
+}
+
+.icon-pipe2:before {
+  content: "\e908";
+  color: #212121;
+  font-size: 457px;
+}
+
+.icon-price:before {
+  content: "\e909";
+  color: #bcbcbc;
+}
+
+.icon-price2:before {
+  content: "\e909";
+  color: #212121;
+  font-size: 465px;
+}
+
+.icon-time:before {
+  content: "\e90a";
+  color: #bcbcbc;
+}
+
+.icon-time2:before {
+  content: "\e90a";
+  color: #212121;
+  font-size: 438px;
+}
+
 .icon-barrel:before {
   content: "\e904";
   color: #bcbcbc;
   font-size: 196px;
 }
+
 .icon-barrel2:before {
   content: "\e904";
   color: #212121;
   font-size: 550px;
 }
+
 .icon-chimney:before {
   content: "\e905";
   color: #bcbcbc;
   font-size: 196px;
 }
+
 .icon-chimney2:before {
   content: "\e905";
   color: #212121;
   font-size: 500px;
 }
+
 .icon-tap:before {
   content: "\e906";
   color: #bcbcbc;
   font-size: 196px;
   z-index: 2;
 }
+
 .icon-tap2:before {
   content: "\e906";
   color: #212121;
   font-size: 500px;
 }
+
 .icon-ar-down:before {
   content: "\e902";
   color: #c18e57;
   font-size: 43px;
 }
+
 .icon-next:before {
   content: "\e903";
   font-size: 64px;
   color: #7d7d7d;
 }
+
 .icon-ar-left:before {
   content: "\e900";
   color: #c18e57;
   font-size: 27px;
 }
+
 .icon-ar-right:before {
   content: "\e901";
   color: #c18e57;
   font-size: 27px;
 }
 
-* {
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Montserrat', sans-serif;

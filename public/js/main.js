@@ -1,3 +1,22 @@
+//mobile menu (header)
+
+$(function(){
+    $('.toggle-menu').on('click',function(){
+        $('.main-nav').toggleClass('open');
+        $('.header').toggleClass('bg');
+        $( ".toggle-menu" ).toggleClass( "menu-on");
+    });
+});
+
+$(document).ready(function() {
+    $(document).ready(function() {
+        $('.nav-link-new').click(function () {
+            $('.main-nav').removeClass('open');
+            $('.toggle-menu').removeClass('menu-on');
+        });
+
+    });
+});
 
 //input mask
 
@@ -14,47 +33,6 @@ $(document).ready(function() {
 //scroll
 
 $('.nav-link-new').mPageScroll2id();
-
-
-//mobile menu (header)
-
-$(window).scroll(function() {
-    let height = $(window).scrollTop();
-    if(height > 1){
-        $('.header').addClass('color');
-    } else{
-        $('.header').removeClass('color');
-    }
-});
-
-
-$(function(){
-    $('.toggle-menu').on('click',function(){
-        $('.mobile-menu').toggleClass('show');
-        $( ".toggle-menu" ).toggleClass( "menu-on");
-    });
-});
-
-$(document).ready(function() {
-    $('.mobile-menu').click(function () {
-        $('.mobile-menu').removeClass('show');
-        $('.toggle-menu').removeClass('menu-on');
-    });
-
-    $(document).ready(function() {
-        $('.nav-link-new').click(function () {
-            $('.mobile-menu').removeClass('show');
-            $('.toggle-menu').removeClass('menu-on');
-        });
-
-        $('.content').click(function () {
-            $('.mobile-menu').removeClass('show');
-            $('.toggle-menu').removeClass('menu-on');
-        });
-    });
-});
-
-
 
 //slider for "banner"
 
@@ -87,6 +65,7 @@ $('.doing-slider').slick({
     arrows: true,
     dots: true,
     centerMode: true,
+    centerPadding: '0px',
     autoplay: false,
     prevArrow:'<button class="slick-arrow slick-prev"> <span class="icon-ar-left"></span> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <span class="icon-ar-right"></span> </button>',
@@ -101,64 +80,46 @@ $('.doing-slider').slick({
     ]
 });
 
-//slider for "examples"
+//slider for "work"
 
-$('.examples-slider').slick({
-    slidesToShow: 2,
+$('.work-slider').slick({
+    slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
     arrows: true,
-    dots: true,
+    dots: false,
     autoplay: false,
-    prevArrow:'<button class="slick-arrow slick-prev"> <img src="images/al.png" class="arrow"> </img> </button>',
-    nextArrow:'<button class="slick-arrow slick-next"> <img src="images/ar.png" class="arrow"> </img></button>',
+    prevArrow:'<button class="slick-arrow slick-prev"> <span class="icon-ar-left"></span> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <span class="icon-ar-right"></span> </button>',
     responsive: [
         {
-            breakpoint: 577,
+            breakpoint: 500,
             settings: {
-                slidesToShow: 1,
-                arrows: true,
-            }
-        },
-
-        {
-            breakpoint: 481,
-            settings: {
-                slidesToShow: 1,
                 arrows: false,
             }
         },
     ]
 });
 
-//slider for "reviews"
+//slider for "production"
 
-$('.reviews-slider').slick({
-    slidesToShow: 3,
+$('.slider-for').slick({
+    slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: true,
-    arrows: true,
+    prevArrow:'<button class="slick-arrow slick-prev"> <span class="icon-ar-left"></span> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <span class="icon-ar-right"></span> </button>',
+    fade: true,
+    asNavFor: '.slider-nav'
+});
+
+$('.slider-nav').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
     dots: false,
-    autoplay: false,
-    prevArrow:'<button class="slick-arrow slick-prev"> <img src="images/al.png" class="arrow"> </img> </button>',
-    nextArrow:'<button class="slick-arrow slick-next"> <img src="images/ar.png" class="arrow"> </img></button>',
-    responsive: [
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 2,
-                arrows: true,
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                arrows: false,
-                dots: true,
-            }
-        },
-    ]
+    centerMode: false,
+    focusOnSelect: true,
+    arrows: false,
 });
 
 // setNameScroll
@@ -199,3 +160,12 @@ $(document).ready(function(){
         });
     });
 });
+
+//
+
+$(".nav-item").click(function(e) {
+    $(".work-slider").slick('refresh');
+    $(".work-slider").slick('slickPrev');
+    console.log('refresh');
+});
+
