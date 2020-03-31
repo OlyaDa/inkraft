@@ -88,7 +88,8 @@ $('.work-slider').slick({
     infinite: true,
     arrows: true,
     dots: false,
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
     prevArrow:'<button class="slick-arrow slick-prev"> <span class="icon-ar-left"></span> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <span class="icon-ar-right"></span> </button>',
     responsive: [
@@ -109,7 +110,15 @@ $('.slider-for').slick({
     prevArrow:'<button class="slick-arrow slick-prev"> <span class="icon-ar-left"></span> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <span class="icon-ar-right"></span> </button>',
     fade: true,
-    asNavFor: '.slider-nav'
+    asNavFor: '.slider-nav',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+            }
+        },
+    ]
 });
 
 $('.slider-nav').slick({
@@ -121,6 +130,20 @@ $('.slider-nav').slick({
     focusOnSelect: true,
     arrows: false,
 });
+
+//video popup
+
+$(document).ready(function() {
+    $('.popup-youtube').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
+    });
+});
+
 
 // setNameScroll
 
@@ -163,9 +186,29 @@ $(document).ready(function(){
 
 //
 
-$(".nav-item").click(function(e) {
-    $(".work-slider").slick('refresh');
-    $(".work-slider").slick('slickPrev');
-    console.log('refresh');
-});
+// $(".nav-item").click(function(e) {
+//     $(".work-slider").slick('refresh');
+//     $(".work-slider").slick('slickPrev');
+//     console.log('refresh');
+// });
 
+// const refresh = function(){
+//     $(".work-slider").slick('refresh');
+// };
+//
+//
+// $(".nav-item").click(function(e) {
+//
+//     setTimeout(refresh, 400);
+//
+//     console.log('refresh');
+// });
+
+$(window).load(function() {
+    $('.work-slider').on('setPosition', function () {
+        $(this).find('.slick-slide').height('auto');
+        var slickTrack = $(this).find('.slick-track');
+        var slickTrackHeight = $(slickTrack).height();
+        $(this).find('.slick-slide').css('height', slickTrackHeight + 'px');
+    });
+})

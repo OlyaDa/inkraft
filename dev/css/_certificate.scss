@@ -1,0 +1,69 @@
+.certificate {
+  background: url("../../public/images/bg-cert.png") top left no-repeat #000;
+  background-size: 100% 100%;
+  padding: 80px 0;
+
+  h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 159.4%;
+    margin-bottom: 215px;
+    color: #BCBCBC;
+    text-align: center;
+  }
+
+  .image {
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.16) 31.25%, rgba(0, 0, 0, 0.17) 73.96%, rgba(0, 0, 0, 0.7) 100%);
+  }
+
+  //media
+
+  @media (max-width: 1570px) {
+    .container {
+      max-width: 1200px;
+    }
+
+    h4 {
+      font-size: 36px;
+      line-height: 159.4%;
+      margin-bottom: 73px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 40px 0;
+    h4 {
+      font-size: 24px;
+      line-height: 159.4%;
+      margin-bottom: 29px;
+    }
+
+    .image {
+      margin-bottom: 46px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 40px 0;
+    h4 {
+      font-size: 18px;
+      line-height: 159.4%;
+      margin-bottom: 27px;
+    }
+
+    .image {
+      margin-bottom: 25px;
+    }
+  }
+}

@@ -75,7 +75,6 @@
     color: rgba(188, 188, 188, 0.48);
 
     &:hover {
-      font-weight: 500;
       color: rgba(188, 188, 188, 0.9);
       text-decoration: none;
     }
@@ -167,55 +166,6 @@
 
   }
 
-  //@media (max-width: 1094px) {
-  //
-  //  .header__inner {
-  //    display: flex;
-  //    flex-wrap: wrap;
-  //    flex-direction: column;
-  //    align-items: inherit;
-  //  }
-  //
-  //  .main-nav {
-  //    display: none;
-  //    padding-top: 14px;
-  //  }
-  //
-  //  .menu li {
-  //    margin-left: 0;
-  //  }
-  //
-  //  .main-nav.open {
-  //    display: block;
-  //  }
-  //
-  //  .menu {
-  //    display: block;
-  //    text-align: center;
-  //  }
-  //
-  //  .menu a {
-  //    font-weight: 700;
-  //    text-transform: uppercase;
-  //    letter-spacing: -.02em;
-  //    font-style: normal;
-  //    font-size: 15px;
-  //    color: #fff;
-  //    display: block;
-  //    margin-bottom: 18px;
-  //    margin-left: 0;
-  //  }
-  //
-  //  .button {
-  //    margin-top: 25px;
-  //  }
-  //
-  //  .toggle-menu {
-  //    display: block;
-  //  }
-  //}
-
-
   /////////////////////media
 
   @media (max-width: 1570px) {
@@ -235,7 +185,6 @@
       line-height: 22px;
 
       &:hover {
-        font-weight: 500;
         font-size: 18px;
         line-height: 22px;
       }
@@ -311,7 +260,6 @@
         color: rgba(188, 188, 188, 0.48);
 
         &:hover {
-          font-weight: 500;
           color: rgba(188, 188, 188, 0.9);
           text-decoration: none;
         }

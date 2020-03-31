@@ -139,6 +139,10 @@
     z-index: 1;
   }
 
+  .slick-prev:active, .slick-next:active, .slick-prev:hover, .slick-next:hover {
+    background: rgba(196, 196, 196, 0.25);
+  }
+
   //slider dots begin
 
   .slick-dots {

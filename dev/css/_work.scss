@@ -6,6 +6,21 @@
 
   ///tabs start
 
+  /* Based on https://github.com/kenwheeler/slick/issues/187#issuecomment-59123524 */
+  /* bootstrap hack: fix content width inside hidden tabs */
+  .tab-content > .tab-pane,
+  .pill-content > .pill-pane {
+    display: block;    /* undo display:none          */
+    height: 0;         /* height:0 is also invisible */
+    overflow: hidden;  /* no-overflow                */
+  }
+  .tab-content > .active,
+  .pill-content > .active {
+    height: auto;      /* let the content decide it  */
+  }
+  /* bootstrap hack end */
+
+
   .nav-tabs {
     border: none !important;
   }
@@ -104,7 +119,8 @@
       border-radius: 0;
 
       &:hover {
-        background: #000;
+        background: #BCBCBC;
+        color: #0F0F0F;
       }
     }
   }
@@ -123,7 +139,7 @@
 
   .right {
     flex-basis: 50%;
-    //width: 50%;
+    //width: 55%;
     background: #FFFFFF;
     display: flex;
     .item {

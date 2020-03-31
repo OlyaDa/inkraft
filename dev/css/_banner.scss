@@ -88,7 +88,8 @@
       border-radius: 0;
 
       &:hover {
-        background: #000;
+        background: #BCBCBC;
+        color: #0F0F0F;
       }
     }
   }
@@ -148,6 +149,10 @@
     left: 40px;
     bottom: 40px;
 
+    &:hover {
+      background: rgba(196, 196, 196, 0.25);
+    }
+
     a {
       text-decoration: none;
       display: flex;
@@ -192,6 +197,10 @@
     outline: none;
     background: transparent;
     z-index: 1;
+  }
+
+  .slick-prev:active, .slick-next:active, .slick-prev:hover, .slick-next:hover {
+    background: rgba(196, 196, 196, 0.25);
   }
 
   /////////////////////media

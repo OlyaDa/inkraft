@@ -5,14 +5,11 @@
 @import "header";
 @import "banner";
 @import "why";
-@import "showroom";
+@import "certificate";
 @import "work";
-@import "contacts";
-@import "reviews";
 @import "production";
 @import "doing";
 @import "installation";
-@import "choice";
 @import "company";
 @import "footer";
 @import "thanks";
@@ -412,7 +409,7 @@ img {
 }
 
 .devgen {
-  background: #fff;
+  background: #000;
   display: flex;
   justify-content: center;
 
@@ -422,7 +419,7 @@ img {
     font-weight: 300;
     font-size: 16px;
     line-height: 195.5%;
-    color: #000;
+    color: #fff;
     &:hover {
       text-decoration: none;
     }
