@@ -88,7 +88,7 @@ $('.work-slider').slick({
     infinite: true,
     arrows: true,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     prevArrow:'<button class="slick-arrow slick-prev"> <span class="icon-ar-left"></span> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <span class="icon-ar-right"></span> </button>',
