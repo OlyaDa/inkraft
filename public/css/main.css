@@ -428,7 +428,8 @@
   .banner .banner-slider {
     outline: none !important; }
   .banner .slick-prev:before, .banner .slick-next:before {
-    font-size: 1px; }
+    font-size: 1px;
+    color: transparent; }
   .banner .slick-prev.slick-arrow {
     right: 17%; }
   .banner .slick-next {
@@ -1136,7 +1137,8 @@
     min-width: 100%;
     min-height: 100%; }
   .work .slick-prev:before, .work .slick-next:before {
-    font-size: 1px; }
+    font-size: 1px;
+    color: transparent; }
   .work .slick-prev.slick-arrow {
     right: 20%; }
   .work .slick-next {
@@ -1454,7 +1456,8 @@
       bottom: 0;
       left: 0; }
   .production .slick-prev:before, .production .slick-next:before {
-    font-size: 1px; }
+    font-size: 1px;
+    color: transparent; }
   .production .icon-ar-left:before {
     color: rgba(193, 142, 87, 0.7); }
   .production .icon-ar-right:before {
@@ -1812,7 +1815,8 @@
     .doing .slick-center .overlay .button .btn {
       color: #fff; }
   .doing .slick-prev:before, .doing .slick-next:before {
-    font-size: 1px; }
+    font-size: 1px;
+    color: transparent; }
   .doing .slick-prev.slick-arrow {
     right: 15%; }
   .doing .slick-next {
