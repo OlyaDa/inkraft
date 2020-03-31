@@ -96,6 +96,7 @@
     text-decoration: none;
     display: block; }
   .header .phone .kiev {
+    display: inline-block;
     margin-bottom: 15px; }
   .header .toggle-menu {
     position: relative;
@@ -253,6 +254,11 @@
           width: 34px; }
       .header .toggle-menu.menu-on span:after {
         width: 44px; } }
+
+.color {
+  padding: 0 0 12px 0 !important; }
+  .color .phone .kiev {
+    margin-bottom: 5px !important; }
 
 .banner {
   position: relative;

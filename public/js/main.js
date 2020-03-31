@@ -18,6 +18,17 @@ $(document).ready(function() {
     });
 });
 
+//mobile menu (header)
+
+$(window).scroll(function() {
+    let height = $(window).scrollTop();
+    if(height > 1){
+        $('.header').addClass('color');
+    } else{
+        $('.header').removeClass('color');
+    }
+});
+
 //input mask
 
 $('.phoneidcl').inputmask('+380(99) 999-99-99',{ "oncomplete": function(){
@@ -88,7 +99,7 @@ $('.work-slider').slick({
     infinite: true,
     arrows: true,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     prevArrow:'<button class="slick-arrow slick-prev"> <span class="icon-ar-left"></span> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <span class="icon-ar-right"></span> </button>',

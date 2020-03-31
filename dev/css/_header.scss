@@ -99,6 +99,7 @@
 
   .phone {
     .kiev {
+      display: inline-block;
       margin-bottom: 15px;
     }
   }
@@ -223,59 +224,59 @@
   }
 
   @media (max-width: 900px) {
-      .header__inner {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: inherit;
-      }
+    .header__inner {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: inherit;
+    }
 
-      .main-nav {
-        display: none;
-        padding-top: 14px;
-      }
+    .main-nav {
+      display: none;
+      padding-top: 14px;
+    }
 
-      .menu li {
-        margin-left: 0;
-        padding: 15px 0;
-      }
+    .menu li {
+      margin-left: 0;
+      padding: 15px 0;
+    }
 
-      .main-nav.open {
-        display: block;
-      }
+    .main-nav.open {
+      display: block;
+    }
 
-      .menu {
-        display: block;
-        text-align: center;
-      }
+    .menu {
+      display: block;
+      text-align: center;
+    }
 
-      .menu a {
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
-        text-transform: uppercase;
-        margin-bottom: 0;
-        color: rgba(188, 188, 188, 0.48);
+    .menu a {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      color: rgba(188, 188, 188, 0.48);
 
-        &:hover {
-          color: rgba(188, 188, 188, 0.9);
-          text-decoration: none;
-        }
+      &:hover {
+        color: rgba(188, 188, 188, 0.9);
+        text-decoration: none;
       }
+    }
 
     .phone {
       display: none;
     }
 
-      .button {
-        margin-top: 25px;
-      }
+    .button {
+      margin-top: 25px;
+    }
 
-      .toggle-menu {
-        display: block;
-      }
+    .toggle-menu {
+      display: block;
+    }
 
     .phone-mob {
       display: inline-block !important;
@@ -329,5 +330,15 @@
 
     }
   }
-
 }
+
+.color {
+  padding: 0 0 12px 0 !important;
+
+  .phone {
+    .kiev {
+      margin-bottom: 5px !important;
+    }
+  }
+}
+
