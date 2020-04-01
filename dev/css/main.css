@@ -850,9 +850,49 @@
   position: relative;
   padding-bottom: 91px;
   overflow: hidden;
+  /* padding-bottom and top for image */
+  /* position of shadow behind the image */
+  /* padding for main container */
+  /*
+
+  for zoom animation
+  uncomment this part if you haven't added this code anywhere else
+
+  */
+  /*
+
+  .mfp-with-zoom .mfp-container,
+  .mfp-with-zoom.mfp-bg {
+      opacity: 0;
+      -webkit-backface-visibility: hidden;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+  }
+
+  .mfp-with-zoom.mfp-ready .mfp-container {
+          opacity: 1;
+  }
+  .mfp-with-zoom.mfp-ready.mfp-bg {
+          opacity: 0.8;
+  }
+
+  .mfp-with-zoom.mfp-removing .mfp-container,
+  .mfp-with-zoom.mfp-removing.mfp-bg {
+      opacity: 0;
+  }
+  */
   /* Based on https://github.com/kenwheeler/slick/issues/187#issuecomment-59123524 */
   /* bootstrap hack: fix content width inside hidden tabs */
   /* bootstrap hack end */ }
+  .work .mfp-no-margins img.mfp-img {
+    padding: 0; }
+  .work .mfp-no-margins .mfp-figure:after {
+    top: 0;
+    bottom: 0; }
+  .work .mfp-no-margins .mfp-container {
+    padding: 0; }
   .work .tab-content > .tab-pane,
   .work .pill-content > .pill-pane {
     display: block;
@@ -1213,6 +1253,9 @@
         line-height: 15px; }
       .work .image {
         margin-top: 50px; } }
+
+.hover {
+  transform: scale(1.5); }
 
 .production {
   padding-bottom: 60px;
