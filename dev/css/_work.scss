@@ -334,11 +334,19 @@
     .work-slider {
       max-width: 862px;
     }
+
+    .image-ink {
+      max-width: 500px;
+    }
   }
 
   @media (max-width: 1570px) {
     .work-slider {
       max-width: 760px;
+    }
+
+    .image-ink {
+      max-width: 445px;
     }
 
     .work-inner {
