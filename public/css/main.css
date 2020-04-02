@@ -277,7 +277,7 @@
     left: 19%;
     top: 48%; }
     .banner .sixty .six {
-      font-family: "Bahamas", sans-serif;
+      font-family: "Bahamas", sans-serif !important;
       font-style: normal;
       font-weight: normal;
       font-size: 288px;
@@ -286,7 +286,7 @@
       display: inline-block;
       position: relative; }
       .banner .sixty .six span {
-        font-family: "Bahamas", sans-serif;
+        font-family: "Bahamas" !important;
         font-style: normal;
         font-weight: normal;
         font-size: 288px;
@@ -350,7 +350,7 @@
   .banner .left-part {
     width: 46%; }
   .banner .sub-title .number {
-    font-family: "Bahamas", sans-serif;
+    font-family: "Bahamas", sans-serif !important;
     font-style: normal;
     font-weight: normal;
     font-size: 144px;
@@ -362,7 +362,7 @@
     margin-right: 140px; }
     .banner .sub-title .number:after {
       content: "%";
-      font-family: "Bahamas", sans-serif;
+      font-family: "Bahamas", sans-serif !important;
       font-style: normal;
       font-weight: normal;
       font-size: 160px;
@@ -2782,6 +2782,11 @@
       font-size: 20px;
       line-height: 115.5%; } }
 
+@font-face {
+  font-family: Bahamas;
+  src: url("../../public/fonts/Bahamas.woff2") format("woff2");
+  src: url("../../public/fonts/Bahamas.woff") format("woff");
+  src: url("../../public/fonts/Bahamas.ttf") format("truetype"); }
 @font-face {
   font-family: 'Lato';
   src: local("Lato Medium"), local("Lato-Medium"), url("../../public/fonts/latomedium.woff2") format("woff2"), url("../../public/fonts/latomedium.woff") format("woff"), url("../../public/fonts/latomedium.ttf") format("truetype");

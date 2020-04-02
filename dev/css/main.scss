@@ -14,6 +14,12 @@
 @import "footer";
 @import "thanks";
 
+@font-face {
+  font-family: Bahamas;
+  src: url('../../public/fonts/Bahamas.woff2') format('woff2');
+  src: url('../../public/fonts/Bahamas.woff') format('woff');
+  src: url('../../public/fonts/Bahamas.ttf') format('truetype');
+}
 
 @font-face {
   font-family: 'Lato';
@@ -73,67 +79,80 @@
   content: "\e90b";
   color: #bcbcbc;
 }
+
 .icon-instrument:before {
   content: "\e90c";
   color: #bcbcbc;
 }
+
 .icon-list:before {
   content: "\e90d";
   color: #bcbcbc;
 }
+
 .icon-truba .path1:before {
   content: "\e90e";
   color: rgb(97, 97, 97);
 }
+
 .icon-truba .path2:before {
   content: "\e90f";
   margin-left: -0.9658203125em;
   color: rgb(188, 188, 188);
 }
+
 .icon-truba .path3:before {
   content: "\e910";
   margin-left: -0.9658203125em;
   color: rgb(188, 188, 188);
 }
+
 .icon-truba .path4:before {
   content: "\e911";
   margin-left: -0.9658203125em;
   color: rgb(188, 188, 188);
   opacity: 0.62;
 }
+
 .icon-truba .path5:before {
   content: "\e912";
   margin-left: -0.9658203125em;
   color: rgb(188, 188, 188);
   opacity: 0.62;
 }
+
 .icon-truba .path6:before {
   content: "\e913";
   margin-left: -0.9658203125em;
   color: rgb(97, 97, 97);
 }
+
 .icon-truba .path7:before {
   content: "\e914";
   margin-left: -0.9658203125em;
   color: rgb(188, 188, 188);
 }
+
 .icon-truba .path8:before {
   content: "\e915";
   margin-left: -0.9658203125em;
   color: rgb(188, 188, 188);
 }
+
 .icon-truba .path9:before {
   content: "\e916";
   margin-left: -0.9658203125em;
   color: rgb(188, 188, 188);
   opacity: 0.62;
 }
+
 .icon-truba .path10:before {
   content: "\e917";
   margin-left: -0.9658203125em;
   color: rgb(188, 188, 188);
   opacity: 0.62;
 }
+
 .icon-truba .path11:before {
   content: "\e918";
   margin-left: -0.9658203125em;
@@ -244,7 +263,6 @@
   color: #c18e57;
   font-size: 27px;
 }
-
 
 body {
   font-family: 'Montserrat', sans-serif;

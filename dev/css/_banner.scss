@@ -19,7 +19,7 @@
     top: 48%;
 
     .six {
-      font-family: "Bahamas", sans-serif;
+      font-family:"Bahamas", sans-serif !important;
       font-style: normal;
       font-weight: normal;
       font-size: 288px;
@@ -29,7 +29,7 @@
       position: relative;
 
       span {
-        font-family: "Bahamas", sans-serif;
+        font-family:"Bahamas", sans-serif !important;
         font-style: normal;
         font-weight: normal;
         font-size: 288px;
@@ -97,7 +97,7 @@
   }
 
   .sub-title .number {
-    font-family: "Bahamas", sans-serif;
+    font-family:"Bahamas", sans-serif !important;
     font-style: normal;
     font-weight: normal;
     font-size: 144px;
@@ -109,7 +109,7 @@
     margin-right: 140px;
     &:after {
       content: "%";
-      font-family: "Bahamas", sans-serif;
+      font-family:"Bahamas", sans-serif !important;
       font-style: normal;
       font-weight: normal;
       font-size: 160px;
