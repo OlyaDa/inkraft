@@ -207,33 +207,33 @@ function setNameScroll(namescroll, mail) {
 
 //tele-order
 
-$(document).ready(function () {
-    $('.order-main').submit(function (e) {
+$(document).ready(function(){
+    $('.order-main').submit(function(e){
         e.preventDefault();
         $.magnificPopup.close();
         $(".disbutt").prop("disabled", true);
         $.ajax({
-            type: 'POST',
-            url: '/wp-content/themes/baugroup/tele_order.php',
+            type:'POST',
+            url:'/wp-content/themes/baugroup/tele_order.php',
             data: $(this).serialize()
-        }).done(function () {
+        }).done(function(){
             $.magnificPopup.close();
-            setTimeout(function () {
+            setTimeout(function(){
                 window.location = 'done';
-            }, 1);
+            },1);
         });
     });
 });
 
 //скрипт, чтобы фиксировалась высота слайдера при табуляции
 
-$(window).load(function () {
-    $('.work-slider').on('setPosition', function () {
-        $(this).find('.slick-slide').height('auto');
-        var slickTrack = $(this).find('.slick-track');
-        var slickTrackHeight = $(slickTrack).height();
-        $(this).find('.slick-slide').css('height', slickTrackHeight + 'px');
-    });
-})
+// $(window).load(function () {
+//     $('.work-slider').on('setPosition', function () {
+//         $(this).find('.slick-slide').height('auto');
+//         var slickTrack = $(this).find('.slick-track');
+//         var slickTrackHeight = $(slickTrack).height();
+//         $(this).find('.slick-slide').css('height', slickTrackHeight + 'px');
+//     });
+// })
 
 
